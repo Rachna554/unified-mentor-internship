@@ -1,0 +1,60 @@
+* {
+    background-color: white;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+input {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"] {
+    width: 255px;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 1.5rem;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 15px #888888;
+}
+
+input[type="button"]:active {
+    transform: scale(1);
+    box-shadow: 3px 3px 5px #aaaaaa;
+}
+
+.calculator {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px #aaaaaa;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
